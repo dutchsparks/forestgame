@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.fade-out {
+  animation: fading 2s steps(40);
+  opacity: 1;
+}
+
+@keyframes fading {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+#black {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  background-color: black;
+  height: 8000px;
+  width: 4000px;
+  opacity: 0;
+  z-index: 3;
+  display: none;
+}
+
+#play_button {
+  margin: auto;
+  display: block;
+  font-size: 35px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, .6);
+}
+
+#play_button:hover {
+  font-size: 37px;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+#video {
+  position: relative;
+  z-index: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#title {
+  justify-self: start;
+  font-size: 55px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 black, 0 5px 0 black, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, .6);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Titan+One);

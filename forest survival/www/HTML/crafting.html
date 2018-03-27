@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Survivor Sam</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/crafting.css">
+  </head>
+
+  <body>
+
+
+    <div id="display">
+
+      <div class="icon_box canvas"></div>
+      <div class="icon_box canvas"></div>
+      <div class="icon_box canvas"></div>
+
+
+      <input class="button" value="Craft" type="submit" id="craft">
+      <input class="button" type="submit" value="Reset" id="reset">
+      <div id="failure_box"></div>
+      <div id="double_message">
+        <span id="double_craft"></span>
+      </div>
+
+    <div id="alert">
+      <span id="alert_message"> </span>
+      <img id="alert_image" height="40px" width="40px" src="">
+
+    </div>
+
+    </div>
+
+    <div id="resources_window" class="icon_box">
+      <ul id="inventory_list">
+        <li></li>
+      </ul>
+    </div>
+
+
+
+    <audio autoplay loop >
+      <source src="../soundVideo/forest_sound.mp3">
+    </audio>
+    <audio id="click_sound" src="../soundVideo/clicksound.mp3"></audio>
+
+    <footer> <a href="hints.html">Hints</a>  <a href="credits.html">Credits</a></footer>
+<div id="black"> </div>
+    <script src="../JS/crafting.js"></script>
+    <script>
+        const black = document.getElementById("black");
+       black.className += ' fade-in';
+       setTimeout(function () { black.style.display = "none";}, 4000);
+
+    </script>
+
+
+  </body>
+
+</html>

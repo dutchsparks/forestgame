@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Bushcraft Game</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+  </head>
+
+  <body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <div id="container">
+      <video autoplay loop id="video">
+     <source src="../soundVideo/droneforest.mp4" type="video/mp4" >
+      </video>
+    </div>
+    <div id="overlay">
+      <div id="title">Bushcraft</div>
+      <div id="play_button">Play Game</div>
+
+    </div>
+
+    <div id="black"> </div>
+    <script>
+      document.getElementById("play_button").addEventListener("click", function() {
+        document.getElementById("black").style.display = "inline";
+        document.getElementById("black").classList.add("fade-out");
+        setTimeout(function() {
+          window.location.href = "crafting.html";
+        }, 1900);
+
+      })
+
+    </script>
+  </body>
+
+</html>

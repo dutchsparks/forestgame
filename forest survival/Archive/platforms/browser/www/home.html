@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet"  type="text/css" href="home.css" >
+</head>
+<body>
+ <div id="container" >
+<video autoplay  loop id="video" >
+     <source src="drone forest.mp4" type="video/mp4" >
+
+</video>
+</div>
+  <div id="overlay" >
+         <div id="title" > Survivor Sam</div>
+       <div id="play_button" >Play Game</div>
+
+  </div>
+
+<div id="black"> </div>
+<script>
+     document.getElementById("play_button").addEventListener( "click", function () {
+          document.getElementById("black").style.display = "inline";
+         document.getElementById("black").classList.add("fade-out");
+         setTimeout(function () {window.location.href = "crafting2.html";}, 1900);
+
+     })
+</script>
+</body>
+</html>
