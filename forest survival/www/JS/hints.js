@@ -156,9 +156,15 @@ remaining.forEach(craft => {
   not_ordered.appendChild(item);
 });
 
+
+function url(){ window.open('https://www.yahoo.com');
+    console.log("url opened")
+}
 const items = document.querySelectorAll("li");
 items.forEach(item => {
   item.addEventListener("click", function() {
+    console.log("add!");
+    url();
     recipes.forEach(ingredients => {
       if (ingredients.includes(item.innerText)) {
         const solution = document.getElementById("solution");
